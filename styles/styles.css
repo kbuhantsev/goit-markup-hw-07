@@ -67,7 +67,6 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
 }
 
 .section {
@@ -75,7 +74,6 @@ img {
   padding-bottom: 94px;
 
   background-color: var(--main-white-color);
-  /* outline: 2px solid teal; */
 }
 
 .no-padding {
@@ -85,9 +83,7 @@ img {
 
 .link {
   text-decoration: none;
-
   color: inherit;
-
   transition: color 250ms var(--main-time-func);
 }
 
@@ -145,7 +141,6 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
   color: var(--accent-black-color);
 }
 
