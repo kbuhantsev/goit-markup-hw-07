@@ -24,41 +24,39 @@
     <!-- Site header -->
     <header class="header">
       <div class="container header-container">
-        <a href="./" class="link site-logo"
-          ><span class="current">Web</span><span class="logo-header">Studio</span></a
-        >
+        <a href="./" class="link site-logo">Web<span class="site-logo--black">Studio</span></a>
         <nav class="header-navigation">
-          <ul class="list">
-            <li class="item">
-              <div class="nav-thumb">
-                <a href="./index.html" class="link link-hover">Студия</a>
+          <ul class="navigation-list list">
+            <li class="navigation-list__item">
+              <div class="navigation-list__thumb">
+                <a href="./index.html" class="link navigation-list__link">Студия</a>
               </div>
             </li>
-            <li class="item">
-              <div class="nav-thumb current">
-                <a href="./portfolio.html" class="link link-hover current">Портфолио</a>
+            <li class="navigation-list__item">
+              <div class="navigation-list__thumb current">
+                <a href="./portfolio.html" class="link navigation-list__link current">Портфолио</a>
               </div>
             </li>
-            <li class="item">
-              <div class="nav-thumb">
-                <a href="./" class="link link-hover">Контакты</a>
+            <li class="navigation-list__item">
+              <div class="navigation-list__thumb">
+                <a href="./" class="link navigation-list__link">Контакты</a>
               </div>
             </li>
           </ul>
         </nav>
         <ul class="list header-contacts">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="link header-ref">
-              <svg class="contacts-icon" width="16px" height="12px">
+          <li class="header-contacts__item">
+            <a href="mailto:info@devstudio.com" class="link header-contacts__ref">
+              <svg class="header-contacts__icon" width="16px" height="12px">
                 <use href="./images/svg/sprite.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="link header-ref"
-              ><svg class="contacts-icon" width="10px" height="16px">
+          <li class="header-contacts__item">
+            <a href="tel:+380961111111" class="link header-contacts__ref"
+              ><svg class="header-contacts__icon" width="10px" height="16px">
                 <use href="./images/svg/sprite.svg#smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -311,25 +309,21 @@
       <div class="container">
         <ul class="list footer-list">
           <li class="footer-item-adress">
-            <a href="./" class="link link-hover site-logo"
-              ><span class="current">Web</span><span class="logo-footer">Studio</span></a
-            >
+            <a href="./" class="link site-logo">Web<span class="site-logo--white">Studio</span></a>
             <address>
-              <ul class="list address-list">
-                <li class="address-item">
-                  <span class="link footer-contacts footer-address">
+              <ul class="list adress-list">
+                <li class="adress-list__item">
+                  <span class="link adress-list__link adress-list__link--white">
                     г. Киев, пр-т Леси Украинки, 26</span
                   >
                 </li>
-                <li class="address-item">
-                  <a href="mailto:info@devstudio.com" class="link link-hover footer-contacts"
+                <li class="adress-list__item">
+                  <a href="mailto:info@devstudio.com" class="link adress-list__link"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="address-item">
-                  <a href="tel:+380961111111" class="link link-hover footer-contacts"
-                    >+38 096 111 11 11</a
-                  >
+                <li class="adress-list__item">
+                  <a href="tel:+380961111111" class="link adress-list__link">+38 096 111 11 11</a>
                 </li>
               </ul>
             </address>
@@ -337,9 +331,9 @@
           <li class="footer-item-links">
             <p class="footer-slogan">присоединяйтесь</p>
             <ul class="list social-links">
-              <li class="social-item">
+              <li class="social-links__item">
                 <a
-                  class="link social-link"
+                  class="link social-links__link social-links__link--black"
                   href="https://www.instagram.com"
                   target="_blank"
                   rel="no-referrer nofollow noopener"
@@ -347,9 +341,9 @@
                     <use href="./images/svg/sprite.svg#instagram"></use></svg
                 ></a>
               </li>
-              <li class="social-item">
+              <li class="social-links__item">
                 <a
-                  class="link social-link"
+                  class="link social-links__link social-links__link--black"
                   href="https://twitter.com"
                   target="_blank"
                   rel="no-referrer nofollow noopener"
@@ -357,9 +351,9 @@
                     <use href="./images/svg/sprite.svg#twitter"></use></svg
                 ></a>
               </li>
-              <li class="social-item">
+              <li class="social-links__item">
                 <a
-                  class="link social-link"
+                  class="link social-links__link social-links__link--black"
                   href="https://facebook.com"
                   target="_blank"
                   rel="no-referrer nofollow noopener"
@@ -367,9 +361,9 @@
                     <use href="./images/svg/sprite.svg#facebook"></use></svg
                 ></a>
               </li>
-              <li class="social-item">
+              <li class="social-links__item">
                 <a
-                  class="link social-link"
+                  class="link social-links__link social-links__link--black"
                   href="https://linkedin.com"
                   target="_blank"
                   rel="no-referrer nofollow noopener"
@@ -381,21 +375,19 @@
           </li>
           <li class="footer-item-subscribe">
             <form class="form-subscribe" name="form-subscribe" autocomplete="on">
-              <div class="email-input-block">
-                <label for="subscribe-input-email" class="subscribe-input-label"
-                  >подпишитесь на рассылку</label
-                >
+              <label class="subscribe"
+                >подпишитесь на рассылку
                 <input
+                  class="subscribe__input"
                   type="email"
-                  class="subscribe-input-email"
                   name="subscribe-input-email"
-                  id="subscribe-input-email"
                   placeholder="E-mail"
                 />
-              </div>
+              </label>
+
               <button type="submit" class="button button-subscribe">
                 <p>Подписаться</p>
-                <svg width="24px" height="24px">
+                <svg class="button-subscribe__icon" width="24px" height="24px">
                   <use href="./images/svg/sprite.svg#icon-send"></use>
                 </svg>
               </button>
