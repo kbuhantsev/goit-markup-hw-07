@@ -69,12 +69,14 @@
     <main class="main">
       <!-- Hero -->
       <section class="section section-hero">
-        <div class="container hero-container">
-          <h1 class="hero-title">
+        <div class="container section-hero__container">
+          <h1 class="section-hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button order-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button section-hero__orderbtn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Goals -->
@@ -82,47 +84,47 @@
         <div class="container">
           <h2 class="visually-hidden">Наши цели</h2>
           <ul class="list goals-list">
-            <li class="goals-item">
-              <div class="icon-thumb">
+            <li class="goals-list__item">
+              <div class="goals-list__thumb">
                 <svg width="70px" height="70px">
                   <use href="./images/svg/sprite.svg#antenna"></use>
                 </svg>
               </div>
-              <p class="goals-title">Внимание к деталям</p>
-              <p class="goals-description">
+              <p class="goals-list__title">Внимание к деталям</p>
+              <p class="goals-list__description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="goals-item">
-              <div class="icon-thumb">
+            <li class="goals-list__item">
+              <div class="goals-list__thumb">
                 <svg width="70px" height="70px">
                   <use href="./images/svg/sprite.svg#clock"></use>
                 </svg>
               </div>
-              <p class="goals-title">Пунктуальность</p>
-              <p class="goals-description">
+              <p class="goals-list__title">Пунктуальность</p>
+              <p class="goals-list__description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="goals-item">
-              <div class="icon-thumb">
+            <li class="goals-list__item">
+              <div class="goals-list__thumb">
                 <svg width="70px" height="70px">
                   <use href="./images/svg/sprite.svg#diagram"></use>
                 </svg>
               </div>
-              <p class="goals-title">Планирование</p>
-              <p class="goals-description">
+              <p class="goals-list__title">Планирование</p>
+              <p class="goals-list__description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="goals-item">
-              <div class="icon-thumb">
+            <li class="goals-list__item">
+              <div class="goals-list__thumb">
                 <svg width="70px" height="70px">
                   <use href="./images/svg/sprite.svg#astronaut"></use>
                 </svg>
               </div>
-              <p class="goals-title">Современные технологии</p>
-              <p class="goals-description">
+              <p class="goals-list__title">Современные технологии</p>
+              <p class="goals-list__description">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -130,41 +132,41 @@
         </div>
       </section>
       <!-- What are we doing -->
-      <section class="section section-works">
+      <section class="section works">
         <div class="container">
-          <h2 class="section-title works-title">Чем мы занимаемся</h2>
-          <ul class="list works-list">
+          <h2 class="section-title works__title">Чем мы занимаемся</h2>
+          <ul class="list works__list">
             <li>
-              <div class="works-thumb">
+              <div class="works__thumb">
                 <img src="./images/works/box-1.jpg" alt="Изображение работ" width="370" />
-                <p class="works-description">Десктопные приложения</p>
+                <p class="works__description">Десктопные приложения</p>
               </div>
             </li>
             <li>
-              <div class="works-thumb">
+              <div class="works__thumb">
                 <img src="./images/works/box-2.jpg" alt="Изображение работ" width="370" />
-                <p class="works-description">Мобильные приложения</p>
+                <p class="works__description">Мобильные приложения</p>
               </div>
             </li>
             <li>
-              <div class="works-thumb">
+              <div class="works__thumb">
                 <img src="./images/works/box-3.jpg" alt="Изображение работ" width="370" />
-                <p class="works-description">Дизайнерские решения</p>
+                <p class="works__description">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <!-- Our team ++ -->
-      <section class="section section-team">
+      <!-- Our team -->
+      <section class="section team">
         <div class="container">
-          <h2 class="section-title team-title">Наша команда</h2>
-          <ul class="list team-list">
-            <li class="team-item">
+          <h2 class="section-title team__title">Наша команда</h2>
+          <ul class="list team__list">
+            <li class="team__item">
               <img src="./images/team/img-3.jpg" alt="Фото сотрудника" width="270" />
-              <div class="team-item-deskr">
-                <p class="team-name">Игорь Демьяненко</p>
-                <p class="team-position" lang="en">Product Designer</p>
+              <div class="team__deskr">
+                <p class="team__name">Игорь Демьяненко</p>
+                <p class="team__position" lang="en">Product Designer</p>
                 <ul class="list social-links">
                   <li class="social-links__item">
                     <a
@@ -209,11 +211,11 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team__item">
               <img src="./images/team/img-2.jpg" alt="Фото сотрудника" width="270" />
-              <div class="team-item-deskr">
-                <p class="team-name">Ольга Репина</p>
-                <p class="team-position" lang="en">Frontend Developer</p>
+              <div class="team__deskr">
+                <p class="team__name">Ольга Репина</p>
+                <p class="team__position" lang="en">Frontend Developer</p>
                 <ul class="list social-links">
                   <li class="social-links__item">
                     <a
@@ -258,11 +260,11 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team__item">
               <img src="./images/team/img-1.jpg" alt="Фото сотрудника" width="270" />
-              <div class="team-item-deskr">
-                <p class="team-name">Николай Тарасов</p>
-                <p class="team-position" lang="en">Marketing</p>
+              <div class="team__deskr">
+                <p class="team__name">Николай Тарасов</p>
+                <p class="team__position" lang="en">Marketing</p>
                 <ul class="list social-links">
                   <li class="social-links__item">
                     <a
@@ -307,11 +309,11 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team__item">
               <img src="./images/team/img.jpg" alt="Фото сотрудника" width="270" />
-              <div class="team-item-deskr">
-                <p class="team-name">Михаил Ермаков</p>
-                <p class="team-position" lang="en">UI Designer</p>
+              <div class="team__deskr">
+                <p class="team__name">Михаил Ермаков</p>
+                <p class="team__position" lang="en">UI Designer</p>
                 <ul class="list social-links">
                   <li class="social-links__item">
                     <a
@@ -362,41 +364,41 @@
       <!-- Regular Customers -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title team-title">Постоянные клиенты</h2>
-          <ul class="list customers-list">
+          <h2 class="section-title team__title">Постоянные клиенты</h2>
+          <ul class="list customers">
             <li>
-              <a href="#" class="link client-link">
+              <a href="#" class="link customers__link">
                 <svg width="106px" height="60px">
                   <use href="./images/svg/sprite.svg#client-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="link client-link"
+              <a href="#" class="link customers__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/svg/sprite.svg#client-2"></use></svg
               ></a>
             </li>
             <li>
-              <a href="#" class="link client-link"
+              <a href="#" class="link customers__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/svg/sprite.svg#client-3"></use></svg
               ></a>
             </li>
             <li>
-              <a href="#" class="link client-link"
+              <a href="#" class="link customers__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/svg/sprite.svg#client-4"></use></svg
               ></a>
             </li>
             <li>
-              <a href="#" class="link client-link"
+              <a href="#" class="link customers__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/svg/sprite.svg#client-5"></use></svg
               ></a>
             </li>
             <li>
-              <a href="#" class="link client-link"
+              <a href="#" class="link customers__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/svg/sprite.svg#client-6"></use></svg
               ></a>
