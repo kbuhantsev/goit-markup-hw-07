@@ -751,11 +751,11 @@ img {
   transform: animate 500ms lianer;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .backdrop__modal {
   transform: animate 500ms lianer reverse;
 }
 
-.modal {
+.backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
