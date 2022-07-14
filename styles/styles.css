@@ -779,24 +779,21 @@ img {
   }
 }
 
-.call-order-form {
+.order-form {
   display: flex;
   flex-direction: column;
   padding: 40px;
 }
 
-.button-close {
+.order-form__btnclose {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
   position: absolute;
-  right: 0;
+  right: 8px;
+  top: 8px;
 
-  margin-right: 8px;
-  margin-top: 8px;
-
-  padding: 0;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -807,14 +804,14 @@ img {
   transition: fill 250ms var(--main-time-func), box-shadow 250ms var(--main-time-func);
 }
 
-.button-close:hover,
-.button-close:focus {
+.order-form__btnclose:hover,
+.order-form__btnclose:focus {
   fill: var(--accent-blue-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.order-title {
+.order-form__title {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -857,11 +854,11 @@ img {
   transition: border-color 250ms var(--main-time-func);
 }
 
-.text-input:focus + .input_icon {
+.text-input:focus + .text-input__icon {
   fill: var(--accent-blue-color);
 }
 
-.input_icon {
+.text-input__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -902,7 +899,15 @@ img {
   margin-bottom: 30px;
 }
 
-.checkbox-icon {
+.agreement__label {
+  display: inline-flex;
+  margin-left: 7px;
+  margin-bottom: 0;
+  letter-spacing: 0.03em;
+  color: var(--main-grey-color);
+}
+
+.agreement__checkbox-icon {
   display: inline-block;
   content: '';
   width: 16px;
@@ -919,7 +924,7 @@ img {
   transition-timing-function: linear;
 }
 
-.agreement-checkbox:checked + .checkbox-icon {
+.agreement__checkbox:checked + .agreement__checkbox-icon {
   background-color: var(--accent-blue-color);
   background-image: url('../images/svg/icon-check.svg');
   background-size: contain;
@@ -927,21 +932,13 @@ img {
   background-origin: border-box;
 }
 
-.agreement-label {
-  display: inline-flex;
-  margin-left: 7px;
-  margin-bottom: 0;
-  letter-spacing: 0.03em;
-  color: var(--main-grey-color);
-}
-
-.agreement-link {
+.agreement__link {
   margin-left: 5px;
   text-decoration: underline;
   color: var(--accent-blue-color);
 }
 
-.btn-submit {
+.order-form__btnsubmit {
   align-self: center;
   display: inline-block;
 
@@ -962,7 +959,7 @@ img {
   transition: box-shadow 250ms var(--main-time-func);
 }
 
-.btn-submit:hover,
-.btn-submit:focus {
+.order-form__btnsubmit:hover,
+.order-form__btnsubmit:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

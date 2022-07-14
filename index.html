@@ -504,47 +504,47 @@
     <!-- Modal Window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button button-close" data-modal-close>
-          <svg width="11px" height="11px">
-            <use href="./images/svg/sprite.svg#close"></use>
-          </svg>
-        </button>
+        <form name="order-form" class="order-form" autocomplete="on">
+          <button type="button" class="button order-form__btnclose" data-modal-close>
+            <svg width="11px" height="11px">
+              <use href="./images/svg/sprite.svg#close"></use>
+            </svg>
+          </button>
 
-        <form name="order-form" class="call-order-form" autocomplete="on">
-          <p class="order-title">Оставьте свои данные, мы вам перезвоним</p>
+          <p class="order-form__title">Оставьте свои данные, мы вам перезвоним</p>
 
           <label class="input-lable" required
-            ><span class="label-title">Имя</span>
+            >Имя
             <div class="input-wrapper">
               <input type="text" name="name-input" class="text-input" />
-              <svg class="input_icon" width="12" height="12">
+              <svg class="text-input__icon" width="12" height="12">
                 <use href="./images/svg/sprite.svg#face"></use>
               </svg>
             </div>
           </label>
 
           <label class="input-lable" required
-            ><span class="label-title">Телефон</span>
+            >Телефон
             <div class="input-wrapper">
               <input type="text" name="phone-input" class="text-input" />
-              <svg class="input_icon" width="12" height="12">
+              <svg class="text-input__icon" width="12" height="12">
                 <use href="./images/svg/sprite.svg#phone"></use>
               </svg>
             </div>
           </label>
 
           <label class="input-lable" required
-            ><span class="label-title">Почта</span>
+            >Почта
             <div class="input-wrapper">
               <input type="email" name="email-input" class="text-input" />
-              <svg class="input_icon" width="12" height="12">
+              <svg class="text-input__icon" width="12" height="12">
                 <use href="./images/svg/sprite.svg#envelop-black"></use>
               </svg>
             </div>
           </label>
 
           <label class="input-lable"
-            ><span class="label-title">Комментарий</span>
+            >Комментарий
             <div class="input-wrapper">
               <textarea
                 name="comment-input"
@@ -556,18 +556,18 @@
           </label>
 
           <div class="agreement">
-            <label class="agreement-label">
+            <label class="agreement__label">
               <input
                 type="checkbox"
                 name="agreement-checkbox"
-                class="agreement-checkbox visually-hidden"
+                class="agreement__checkbox visually-hidden"
               />
-              <span class="checkbox-icon"></span>
+              <span class="agreement__checkbox-icon"></span>
               Соглашаюсь с рассылкой и принимаю
             </label>
-            <a href="#" class="agreement-link">Условия договора</a>
+            <a href="#" class="agreement__link">Условия договора</a>
           </div>
-          <button type="submit" class="button btn-submit">Отправить</button>
+          <button type="submit" class="button order-form__btnsubmit">Отправить</button>
         </form>
       </div>
     </div>
