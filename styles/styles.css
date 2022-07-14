@@ -654,12 +654,6 @@ img {
   color: var(--main-white-color);
 }
 
-/*
-|========================================
-| list Of Works
-|========================================
-*/
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
