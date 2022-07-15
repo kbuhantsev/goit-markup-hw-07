@@ -11,6 +11,7 @@
 }
 
 .site-logo {
+  @extend %link;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -31,6 +32,7 @@
 }
 
 .navigation-list {
+  @extend %list;
   display: flex;
 
   &__item:not(:last-child) {
@@ -38,14 +40,10 @@
   }
 
   &__link {
+    @extend %link;
     display: block;
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-
-  &__link:hover,
-  &__link:focus {
-    color: $accent-blue-color;
   }
 
   &__thumb {
@@ -74,6 +72,7 @@
 }
 
 .header-contacts {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -81,16 +80,11 @@
   color: $main-grey-color;
 
   &__ref {
+    @extend %link;
     display: flex;
     align-items: center;
     fill: $main-grey-color;
     transition: fill 250ms $main-time-func, color 250ms $main-time-func;
-  }
-
-  &__ref:hover,
-  &__ref:focus {
-    color: $accent-blue-color;
-    fill: $accent-blue-color;
   }
 
   &__item {

@@ -6,6 +6,7 @@
   }
 
   &__list {
+    @extend %list;
     display: flex;
     flex-wrap: wrap;
     gap: $card-set-gap;

@@ -1,8 +1,10 @@
 .customers {
+  @extend %list;
   display: flex;
   justify-content: space-between;
 
   &__link {
+    @extend %link;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +19,5 @@
   &__link:hover,
   &__link:focus {
     border-color: $accent-blue-color;
-    fill: $accent-blue-color;
   }
 }

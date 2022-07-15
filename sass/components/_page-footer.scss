@@ -10,6 +10,7 @@
 }
 
 .footer-list {
+  @extend %list;
   display: flex;
 }
 
@@ -30,7 +31,10 @@
 }
 
 .adress-list {
+  @extend %list;
+
   &__link {
+    @extend %link;
     font-style: normal;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);

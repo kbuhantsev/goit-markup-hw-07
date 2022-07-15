@@ -1,4 +1,5 @@
 .list-filter {
+  @extend %list;
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -36,9 +37,14 @@
 }
 
 .portfolio-list {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   gap: $card-set-gap;
+
+  &__link {
+    @extend %link;
+  }
 
   &__item {
     flex-basis: calc((100% - $card-set-gap * 2) / 3);
@@ -49,6 +55,10 @@
   &__item:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
       0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    .portfolio-list__title {
+      color: $accent-black-color;
+    }
   }
 
   &__thumb {
@@ -85,6 +95,11 @@
   &__item:hover .portfolio-list__overlay {
     transform: translateX(0);
   }
+
+  // &__item:hover .portfolio-list__title,
+  // &__item:focus .portfolio-list__title {
+  //   color: $accent-black-color;
+  // }
 
   &__text {
     padding: 60px 24px;
