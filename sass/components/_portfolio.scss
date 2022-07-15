@@ -44,6 +44,11 @@
 
   &__link {
     @extend %link;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
   }
 
   &__item {
@@ -55,10 +60,6 @@
   &__item:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
       0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    .portfolio-list__title {
-      color: $accent-black-color;
-    }
   }
 
   &__thumb {
@@ -96,17 +97,12 @@
     transform: translateX(0);
   }
 
-  // &__item:hover .portfolio-list__title,
-  // &__item:focus .portfolio-list__title {
-  //   color: $accent-black-color;
-  // }
-
   &__text {
     padding: 60px 24px;
     padding-bottom: 0;
 
     font-size: 18px;
-    line-height: calc(28 / 16);
+    line-height: 1.8;
     color: $main-white-color;
   }
 
