@@ -12,11 +12,11 @@
     border-radius: 4px;
     fill: $icons-fill-color;
     transition: fill 250ms $main-time-func, border-color 250ms $main-time-func;
+  }
 
-    &__link:hover,
-    &__link:focus {
-      border-color: $accent-blue-color;
-      fill: $accent-blue-color;
-    }
+  &__link:hover,
+  &__link:focus {
+    border-color: $accent-blue-color;
+    fill: $accent-blue-color;
   }
 }

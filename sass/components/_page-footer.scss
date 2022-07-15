@@ -40,6 +40,11 @@
     &--white {
       color: $main-white-color;
     }
+
+    &:hover,
+    &:focus {
+      color: $accent-blue-color;
+    }
   }
 
   &__item:not(:last-child) {

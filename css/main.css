@@ -70,6 +70,7 @@ img {
 
 .list {
   list-style: none;
+  font-style: normal;
 }
 
 .button, .list-filter__btn, .section-hero__orderbtn {
@@ -429,7 +430,7 @@ img {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers__link__link:hover, .customers__link__link:focus {
+.customers__link:hover, .customers__link:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -475,6 +476,9 @@ img {
 }
 .adress-list__link--white {
   color: #fff;
+}
+.adress-list__link:hover, .adress-list__link:focus {
+  color: #2196f3;
 }
 .adress-list__item:not(:last-child) {
   margin-bottom: 10px;
@@ -664,19 +668,16 @@ img {
   -webkit-transition: opacity 500ms linear;
   transition: opacity 500ms linear;
 }
-
-.backdrop-is-hidden {
+.backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
   -webkit-transform: animate 500ms lianer;
           transform: animate 500ms lianer;
 }
-
-.backdrop-is-hidden .backdrop__modal {
+.backdrop--is-hidden .backdrop__modal {
   -webkit-transform: animate 500ms lianer reverse;
           transform: animate 500ms lianer reverse;
 }
-
 .backdrop__modal {
   position: absolute;
   top: 50%;
@@ -720,7 +721,6 @@ img {
           flex-direction: column;
   padding: 40px;
 }
-
 .order-form__btnclose {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -744,14 +744,11 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.order-form__btnclose:hover,
-.order-form__btnclose:focus {
+.order-form__btnclose:hover, .order-form__btnclose:focus {
   fill: #2196f3;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .order-form__title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -760,17 +757,37 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.order-form__btnsubmit {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background-color: #2196f3;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.order-form__btnsubmit:hover, .order-form__btnsubmit:focus {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 .input-lable {
   font-size: 12px;
   letter-spacing: 0.01em;
   color: #757575;
 }
-
-.input-lable:hover .text-input,
-.input-lable:focus .text-input,
-.input-lable:hover .input_icon,
-.input-lable:focus .input_icon {
+.input-lable:hover, .input-lable:focus .input_icon {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -796,11 +813,10 @@ img {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.text-input:focus + .text-input__icon {
+.input-lable:hover .text-input, .input-lable:focus .text-input {
+  border-color: #2196f3;
   fill: #2196f3;
 }
-
 .text-input__icon {
   position: absolute;
   top: 50%;
@@ -809,6 +825,9 @@ img {
           transform: translateY(-50%);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-input:focus + .text-input__icon {
+  fill: #2196f3;
 }
 
 .text-area {
@@ -823,29 +842,22 @@ img {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .text-area::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .text-area::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .text-area:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .text-area::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .text-area::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-.text-area:hover,
-.text-area:focus {
+.text-area:hover, .text-area:focus {
   border-color: #2196f3;
 }
 
@@ -864,7 +876,6 @@ img {
           align-items: center;
   margin-bottom: 30px;
 }
-
 .agreement__label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -874,7 +885,11 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-
+.agreement__link {
+  margin-left: 5px;
+  text-decoration: underline;
+  color: #2196f3;
+}
 .agreement__checkbox-icon {
   display: inline-block;
   content: "";
@@ -901,37 +916,4 @@ img {
   background-size: contain;
   border-color: #2196f3;
   background-origin: border-box;
-}
-
-.agreement__link {
-  margin-left: 5px;
-  text-decoration: underline;
-  color: #2196f3;
-}
-
-.order-form__btnsubmit {
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: inline-block;
-  height: 50px;
-  width: 200px;
-  border-radius: 4px;
-  padding: 6px 22px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #fff;
-  background-color: #2196f3;
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.order-form__btnsubmit:hover,
-.order-form__btnsubmit:focus {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=main.css.map */
