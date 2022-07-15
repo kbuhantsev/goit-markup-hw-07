@@ -5,19 +5,14 @@
   margin-bottom: 50px;
 
   &__btn {
-    @extend .button;
+    @extend %button;
 
-    display: inline-block;
-
-    border-radius: 4px;
-    padding: 6px 22px;
+    width: auto;
+    padding-left: 22px;
+    padding-right: 22px;
 
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.62;
-    text-align: center;
-    letter-spacing: inherit;
-
     color: inherit;
     background-color: $btn-filter-bg-color;
 

@@ -48,9 +48,7 @@
   padding: 40px;
 
   &__btnclose {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    @extend %button;
 
     position: absolute;
     right: 8px;
@@ -61,6 +59,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
+    background-color: $main-white-color;
     fill: black;
 
     transition: fill 250ms $main-time-func, box-shadow 250ms $main-time-func;
@@ -80,26 +79,12 @@
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    letter-spacing: 0.03em;
   }
 
   &__btnsubmit {
+    @extend %button;
+
     align-self: center;
-    display: inline-block;
-
-    height: 50px;
-    width: 200px;
-    border-radius: 4px;
-    padding: 6px 22px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
-
-    color: $main-white-color;
-    background-color: $accent-blue-color;
 
     transition: box-shadow 250ms $main-time-func;
 
@@ -155,10 +140,8 @@
     transition: fill 250ms $main-time-func;
   }
 
-  &:focus + {
-    .text-input__icon {
-      fill: $accent-blue-color;
-    }
+  &:focus + .text-input__icon {
+    fill: $accent-blue-color;
   }
 }
 
@@ -168,7 +151,6 @@
   padding: 12px 16px;
   resize: none;
 
-  font-weight: 400;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 

@@ -32,8 +32,6 @@
 .adress-list {
   &__link {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 
@@ -85,19 +83,7 @@
 }
 
 .button-subscribe {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 200px;
-  height: 50px;
-
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 4px;
-
-  background-color: $accent-blue-color;
-  color: $main-white-color;
+  @extend %button;
 
   &__icon {
     margin-left: 15px;
